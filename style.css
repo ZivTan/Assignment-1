@@ -1,3 +1,4 @@
+/*for the navigation tab*/
 a{
     color: gray;
     text-decoration: none;
@@ -15,7 +16,7 @@ body{
 .container{
     display:flex;
     position: relative;
-    width: auto;
+    width: 100%;
     height: 125px;
     background-color: white;
     justify-content: flex-end;
@@ -31,6 +32,7 @@ body{
 
 
 .button{
+    padding: 2px;
     margin: 30px;
     width: auto;
     height: auto;
@@ -40,4 +42,85 @@ body{
     font-size: 20px;
     font-weight: bold;
     
+}
+
+
+/*for the picture scrolling section*/
+
+.picSec{
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    background: lightgray; 
+}
+
+.slider{
+    width:100%;
+    height:700px;
+    overflow: hidden; 
+}
+
+.slides{
+    width: 500%;
+    height: 700px;
+    display: flex;
+}
+
+
+.slides input{
+    display:none;
+}
+
+.slide{
+    width:20%;
+    transition:2s;
+}
+
+.slide img{
+    width: 1920px;
+    height: 700px;
+}
+
+.manual-navigation{
+    position:absolute;
+    width: 1575px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid lightgray;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: lightgrey;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
 }
