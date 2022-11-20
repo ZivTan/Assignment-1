@@ -5,11 +5,11 @@ a{
 }
 
 a:hover{
-    color: lightblue;
+    color: rgb(223, 223, 223);
 }
 
 body{
-    background-color: lightgrey;
+    background-color: rgb(216, 255, 216);
 }
 
 
@@ -126,3 +126,93 @@ body{
 #radio4:checked ~ .first{
     margin-left: -60%;
 }
+
+/*automatic navigation*/
+
+.auto-navigation {
+    position: absolute;
+    display:flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 660px;
+}
+
+.auto-navigation div{
+    border: 2px solid lightgrey;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.auto-navigation div:not(:last-child){
+    margin-right: 50px;
+}
+
+#radio1:checked ~ .auto-navigation.auto-btn1{
+    background: lightgray
+}
+
+#radio2:checked ~ .auto-navigation.auto-btn2{
+    background: lightgray
+}
+
+#radio3:checked ~ .auto-navigation.auto-btn3{
+    background: lightgray
+}
+
+#radio4:checked ~ .auto-navigation.auto-btn{
+    background: lightgray
+}
+
+/*Header for website*/
+
+.container2{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2words{
+    color: darkgreen;
+    font-size: 20px;
+}
+
+
+/*All the 3 sections according to the tabs*/
+
+.container3{
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    width:100%;
+    height: auto;
+}
+
+.split{
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.img{
+    border: 2px green solid;
+    border-radius: 50px;
+}
+
+
+h1{
+    color: darkgreen;
+    font-size: 40px;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+}
+
+
