@@ -6,7 +6,7 @@
             <title>Hakka LeiPoPo 擂婆婆</title>
         </head>
 
-    <body>
+    <body id = 'scrollbar'>
 
         <nav>
             <div class = 'container'>
@@ -53,16 +53,16 @@
                         <input type = 'radio' name = 'radio-btn' id = 'radio4'>
                     
                         <div class = 'first slide'>
-                            <img src = 'Image1.jpg' alt=''>
+                            <img src = './pictures/Image1.jpg' alt=''>
                         </div>
                         <div class = 'second slide'>
-                            <img src = 'Image2.jpeg' alt=''>
+                            <img src = './pictures/Image2.jpeg' alt=''>
                         </div>
                         <div class = 'third slide'>
-                            <img src = 'Image3.jpeg' alt=''>
+                            <img src = './pictures/Image3.jpeg' alt=''>
                         </div>
                         <div class = 'fourth slide'>
-                            <img src = 'Image4.jpg' alt=''>
+                            <img src = './pictures/Image4.jpg' alt=''>
                         </div>
 
                     
@@ -84,6 +84,8 @@
             </div>
         </section>
 
+        <div class = 'line'></div>
+
         <header>
             <div class = 'shadow'>
                 <div class = 'container2'>
@@ -95,21 +97,78 @@
 
         <section class = 'container3'>
             <div class = 'split'>
-                <img src = 'Image5.png' class = 'img'>
-            </div>
+                <div class = 'inner_container'>
+                    <img src = './pictures/Image5.jpg' class = 'img'>
+                </div>  
+            </div> 
+
             <div class = 'split'>
-                <h1 style = 'text-align: center;'>Our Story</h1>
-                <pre style = 'text-align: center;'>
-                    Learn more about how LeiPoPo came to be, 
-                    along with the tradition behind every bowl of delicious LeiCha soup.
-                </pre>
-                <a href="#">
-                    <button class = 'r-btn'>READ MORE</button>
+                <div class = 'inner_container'>
+                    <h1 style = 'text-align: center;'>Our Story</h1>
+                    <p style = 'text-align: center;'>
+                    Learn more about how LeiPoPo came to be,<br>
+                    along with the tradition behind every bowl of <br>
+                    delicious LeiCha soup.
+                    </p>
+                    
+                    <a href="#">
+                    <button class = 'btn' >READ MORE</button>
                 </a>
+                </div>
+                
+            </div>  
+        </section>
+
+        <section class = 'container3'>
+            <div class = 'split'>
+                <div class = 'inner_container'>
+                    <h1 style = 'text-align: center;'>The Hakka Delicacy</h1>
+                    <p style = 'text-align: center;'>
+                    Have a peak at our delicous foods<br>
+                    and what you can expect from a visit to LeiPoPo.
+                    </p>
+                    
+                    <a href="#">
+                    <button class = 'btn' >READ MORE</button>
+                </a>
+                </div>
+                
+            </div>
+
+            <div class = 'split'>
+                <div class = 'inner_container'>
+                    <img src = './pictures/Image6.jpg' class = 'img'>
+                </div>  
+            </div>      
+                
+
             </div>
         </section>
 
+        <section class = 'container3'>
+            <div class = 'split'>
+                <div class = 'inner_container'>
+                    <img src = './pictures/Image7.jpg' class = 'img'>
+                </div>  
+            </div> 
 
+            <div class = 'split'>
+                <div class = 'inner_container'>
+                    <h1 style = 'text-align: center;'>Contact Us</h1>
+                    <p style = 'text-align: center;'>
+                    Find out more about our different venues,<br>
+                    or even join our big family as we bring<br>
+                    the taste of tradtion to the entirety of Singapore.
+                    </p>
+                    
+                    <a href="#">
+                    <button class = 'btn' >READ MORE</button>
+                </a>
+                </div>
+                
+            </div>  
+        </section>
+    
 
         <script type = 'text/javascript'>
             var counter = 1;
@@ -122,6 +181,8 @@
                 }
             }, 5000);
         </script>
+
+        <script src = 'smoothscrolling.js'></script>
     </body>
 
 </html>
