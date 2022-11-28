@@ -194,6 +194,8 @@ body{
 /*All the 3 sections according to the tabs*/
 
 .container3{
+    background-color: rgba(185, 185, 185, 0.725);
+    border-radius: 30px;
     margin-top: 80px;
     width:100%;
     height:auto;
