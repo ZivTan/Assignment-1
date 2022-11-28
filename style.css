@@ -13,39 +13,115 @@ a:hover{
     color: lightgreen;
 }
 
+li{
+    list-style: none;
+}
+
 body{
-    background-color: rgb(231, 231, 231);
+    background-color: rgba(14, 119, 0, 0.223);
 }
 
 
-.container{
-    display:flex;
-    position: relative;
+nav{
     height: 125px;
+    width:100%;
     background-color: white;
-    justify-content: flex-end;
-    align-items: center;
-    transition: 0.3s ease;
 }
 
-.banner{
-    position:absolute;
+.logo{
     left:0px;
-    height:auto;
-    width:auto;
+    padding: 10px;
+    height:100px;
+    width:200px;
 }
 
-
-.button{
-    padding: 2px;
-    margin: 30px;
-    width: auto;
-    height: auto;
+nav ul{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    margin-right: 2px;
 }
 
-.button_words{
-    font-size: 20px;
-    font-weight: bold;    
+nav ul li{
+    display: inline-block;
+    line-height: 50.5px;
+    margin: 25px;
+}
+
+nav ul li a{
+    font-size: 23px;
+    font-weight: bold; 
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: darkgreen;
+    float:right;
+    margin-top: 50.5px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display:none;
+}
+
+@media (max-width:952px){
+        nav ul li a{
+            font-size: 16px;
+        } 
+    }
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position: absolute;
+        width: 89%;
+        height: 310px;
+        margin-top: 125px;
+        margin-left: 8px;
+        background: rgb(224, 224, 224);
+        right: -100%;
+        transition: all 0.5s;
+        color: rgb(170, 170, 170);
+        filter: drop-shadow(.1em .30em .2em) ;
+        
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li{
+        display: block; 
+        line-height: 20px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        margin-right: 35px;
+    }
+
+    nav ul li a:hover,a:active{
+        background: rgb(106, 173, 0);
+        color: white;
+        padding: 16px 32px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #check:checked ~ ul{
+        right: 1.2%;
+    }
+
+    .manual-btn{
+        display:none;
+    }
 }
 
 .line{
@@ -61,7 +137,6 @@ body{
     padding: 0;
     height: auto;
     display: flex;
-    position:relative;
     align-items: center;
     justify-content: center;
     background: lightgray; 
@@ -179,8 +254,8 @@ body{
     background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
-    width: auto;
-    height: 150px;
+    width: 100%;
+    height: auto;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -196,9 +271,9 @@ body{
 /*All the 3 sections according to the tabs*/
 
 .container3{
-    background: linear-gradient(rgba(197, 236, 0, 0.771), rgba(86, 183, 0, 0.366));
+    background: linear-gradient(rgba(197, 236, 0, 0.581), rgba(85, 183, 0, 0.285));
     border-radius: 30px;
-    margin-top: 80px;
+    margin-top: 40px;
     width:100%;
     height:auto;
     display:flex;
@@ -247,6 +322,7 @@ p{
 }
 
 .btn{
+    margin-bottom: 10px;
     margin-top: 20px;
     border: none;
     color: darkgreen;
@@ -264,6 +340,50 @@ p{
     background-color: darkgreen;
     color: white;
 }
+
+.container4{
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.707);
+    width:100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container4words{
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.btn_container{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.social_btns{
+    display:flex;
+    column-gap: 40px;
+    font-size: 40px;
+}
+
+
+.banner{
+    border: 2px green solid;
+    position: absolute;
+    width: 230px;
+    height: 110px;
+    right: 645px;
+    margin-top: 40px;
+}
+
 
 /*For the button to go top*/
 .GoTopButton{
@@ -284,6 +404,7 @@ p{
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -295,4 +416,5 @@ p{
     background: rgba(126, 227, 11, 0.453);
     border-radius: 100vw;
 }
+
 
