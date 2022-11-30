@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 /*for the navigation tab*/
 a{
     color: darkgreen;
@@ -10,16 +9,13 @@ a{
 }
 
 a:hover{
-    color: lightgreen;
+    color: rgb(147, 255, 147);
 }
 
 li{
     list-style: none;
 }
 
-body{
-    background-color: rgba(14, 119, 0, 0.223);
-}
 
 
 nav{
@@ -76,6 +72,7 @@ nav ul li a{
     }
 
 @media (max-width:858px){
+
     .checkbtn{
         display: block;
     }
@@ -122,7 +119,21 @@ nav ul li a{
     .manual-btn{
         display:none;
     }
+
+    .radiobtn_container{
+        display:none;
+    }
+
+    .banner{
+        border: 2px green solid;
+        position: absolute;
+        max-width: 230px;
+        max-height: 110px;
+        right: auto;
+        margin-top: 40px;
+    }
 }
+
 
 .line{
     width:100%;
@@ -135,24 +146,32 @@ nav ul li a{
 .picSec{
     margin: 0;
     padding: 0;
-    height: auto;
+    max-height: 600px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: lightgray; 
 }
 
 .slider{
     width:100%;
-    height:auto;
+    max-height: 600px;
     overflow: hidden; 
 }
 
 .slides{
     width: 500%;
+    max-height: 600px;
     display: flex;
 }
 
+.radiobtn_container{
+    position: absolute;
+    width: 275px;
+    height: 30px;
+    right: 41.2%;
+    bottom: 4.25%;
+    border: 2px rgb(118, 118, 118) solid;
+    background: rgba(128, 128, 128, 0.697);
+    border-radius: 30px;
+}
 
 .slides input{
     display:none;
@@ -165,7 +184,7 @@ nav ul li a{
 
 .slide img{
     width: 100%;
-    height: auto;
+    max-height: 600px;
 }
 
 .manual-navigation{
@@ -177,11 +196,12 @@ nav ul li a{
 }
 
 .manual-btn{
-    border: 2px solid lightgray;
+    border: 2px solid rgb(255, 255, 255);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    margin-right:23px;
 }
 
 .manual-btn:not(:last-child){
@@ -253,10 +273,10 @@ nav ul li a{
     box-shadow: 30px;
     background-color: white;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,9 +291,7 @@ nav ul li a{
 /*All the 3 sections according to the tabs*/
 
 .container3{
-    background: linear-gradient(rgba(197, 236, 0, 0.581), rgba(85, 183, 0, 0.285));
-    border-radius: 30px;
-    margin-top: 40px;
+    background: rgb(219, 255, 219);
     width:100%;
     height:auto;
     display:flex;
@@ -301,35 +319,39 @@ nav ul li a{
     
 }
 
-.img{
-    border: 2px green solid;
-    border-radius: 35px;
+.imghome1{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.imghome2{
     width: 100%;
     height: auto;
 }
 
-
 h1{
-    text-decoration: underline; 
+    font-weight: bold;
     color: darkgreen;
-    font-size: 40px;
+    font-size: clamp(23px, 3vw, 40px);
 }
 
 p{                
     color: black;
-    font-size: 25px;
+    font-size: clamp(8px, 3vw, 25px);
     width: 100%;
 }
 
 .btn{
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 5px;
     border: none;
     color: darkgreen;
     padding: 16px 32px;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: clamp(3px, 3vw, 20px);
     cursor: pointer;
     background: transparent;
     transition: all 0.5s ease-in-out;
@@ -342,8 +364,8 @@ p{
 }
 
 .container4{
-    margin-top: 40px;
-    background: rgba(255, 255, 255, 0.707);
+    margin-top: 20px;
+    background: linear-gradient(rgb(191, 255, 172),rgb(85, 175, 85));
     width:100%;
     height: 250px;
     display: flex;
@@ -374,14 +396,24 @@ p{
     font-size: 40px;
 }
 
+.social_btns a:hover{
+    color: white;
+}
+
+.banner_container{
+    position:absolute;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
 
 .banner{
     border: 2px green solid;
-    position: absolute;
-    width: 230px;
-    height: 110px;
-    right: 645px;
-    margin-top: 40px;
+    max-width: 230px;
+    max-height: 110px;
 }
 
 
