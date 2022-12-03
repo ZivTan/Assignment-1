@@ -5,7 +5,7 @@
         <title>Hakka LeiPoPo 擂婆婆</title>
     </head>
 
-    <body background = './Pictures/background image.jpg'>
+    <body background = './Pictures/background_image.jpg'>
 
         <nav>
             <input type = 'checkbox' id = 'check'>
@@ -15,8 +15,8 @@
             <img src = 'https://hakkaleipopo.com/img/-logo-1593669592.jpg' class = 'logo'>
     
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="#">Our Menu</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>             
@@ -26,7 +26,7 @@
 
         <section>
 
-            <div class = 'picSec'>
+            <div class = 'picSec fadeIn'>
                 <div class = 'slider'>
                     <div class = 'slides'>
                         <div class = 'radiobtn_container'></div>
@@ -36,16 +36,16 @@
                         <input type = 'radio' name = 'radio-btn' id = 'radio4'>
 
                         <div class = 'first slide'>
-                            <img src = './pictures/Image1.jpg' alt=''>
+                            <img src = './pictures/Image1.jpg'>
                         </div>
                         <div class = 'second slide'>
-                            <img src = './pictures/Image2.jpeg' alt=''>
+                            <img src = './pictures/Image2.jpeg'>
                         </div>
                         <div class = 'third slide'>
-                            <img src = './pictures/Image3.jpeg' alt=''>
+                            <img src = './pictures/Image3.jpeg'>
                         </div>
                         <div class = 'fourth slide'>
-                            <img src = './pictures/Image4.jpg' alt=''>
+                            <img src = './pictures/Image4.jpg'>
                         </div>
 
                     
@@ -69,16 +69,13 @@
 
         <div class = 'line'></div>
 
-        <header>
-            <div class = 'shadow'>
-                <div class = 'container2'>
-                    <div class = 'container2words'>
-                        <h2 style = "font-weight: bold;">A Taste of Tradition.</h2>
-                </div>
-            </div>
+           
+        <header class = 'container2'>
+            <h2 style = "font-weight: bold; font-size: 40px;">A Taste of Tradition.</h2>
         </header>
 
-        <section class = 'container3'>
+
+        <section class = 'container2 special'>
             <div class = 'line'></div>
             <div class = 'split'>
                 <div class = 'inner_container'>
@@ -87,8 +84,8 @@
             </div> 
 
             <div class = 'split'>
-                <div class = 'inner_container'>
-                    <h1 style = 'text-align: center;'>Our Story</h1>
+                <div class = 'inner_container_words'>
+                    <h1 style = 'text-align: center; margin-top: 50px; margin-bottom:-10px;'>Our Story</h1>
                     <p style = 'text-align: center;'>
                     Learn more about how LeiPoPo came to be,<br>
                     along with the tradition behind every bowl of <br>
@@ -104,10 +101,10 @@
             <div class = 'line'></div>  
         </section>
 
-        <section class = 'container3'>
+        <section class = 'container2 special'>
             <div class = 'split'>
-                <div class = 'inner_container'>
-                    <h1 style = 'text-align: center;'>The Hakka Delicacy</h1>
+                <div class = 'inner_container_words'>
+                    <h1 style = 'text-align: center; margin-top: 50px; margin-bottom:-10px;'>The Hakka Delicacy</h1>
                     <p style = 'text-align: center;'>
                     Have a peak at our delicous foods<br>
                     and what you can expect from a visit to LeiPoPo.
@@ -129,7 +126,7 @@
             
         </section>
 
-        <section class = 'container3'>
+        <section class = 'container2 special'>
             <div class = 'split'>
                 <div class = 'inner_container'>
                     <img src = './pictures/Image7.png' class = 'imghome2'>
@@ -137,8 +134,8 @@
             </div> 
 
             <div class = 'split'>
-                <div class = 'inner_container'>
-                    <h1 style = 'text-align: center;'>Contact Us</h1>
+                <div class = 'inner_container_words'>
+                    <h1 style = 'text-align: center; margin-top: 50px; margin-bottom:-10px'>Contact Us</h1>
                     <p style = 'text-align: center;'>
                     Find out more about our different venues,<br>
                     or even join our big family as we bring<br>
@@ -153,8 +150,8 @@
             <div class = 'line'></div> 
         </section>
         
-        <div class = 'container4'>
-            <div class = 'container4words'>
+        <div class = 'container3'>
+            <div class = 'container3words'>
                 CONNECT WITH US
             </div>
 
@@ -173,19 +170,9 @@
 
         <a class = 'GoTopButton' href = '#'><i class="fa-solid fa-arrow-up"></i></a>
 
-        <script type = 'text/javascript'>
-            var counter = 1;
-            setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                
-                if(counter > 4){
-                    counter = 1;
-                }
-            }, 5000);
-        </script>
+        <script src = 'carousel.js'></script>
 
-        <script src = 'smoothscrolling.js'></script>
+        <script src = 'animation.js'></script>
     </body>
 
 </html>
