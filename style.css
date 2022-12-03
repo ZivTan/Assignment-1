@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*for the navigation tab*/
 a{
     color: darkgreen;
@@ -452,6 +457,113 @@ to {
     background-image: url(./Pictures/play.png);
 }
 
+/*Our Menu*/
+.foodcontainer{
+    position: relative;
+    width:100%;
+    height:auto;
+}
+
+.properties{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.menucontainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(231, 255, 231);
+    width:100%;
+    height:auto;
+}
+
+.menuproperties{
+    margin-top: 781px;
+}
+
+.menu_img{
+    width: 60%;
+    height: auto;
+    border-radius: 25px;
+    border: 3px darkgreen solid;
+    margin-bottom: 40px;
+}
+
+.food_img{
+    margin: 50px;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px darkgreen solid;
+}
+
+.description_container{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    z-index:2;
+}
+
+.descbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+    height: 291px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.712);
+    opacity: 0;
+}
+
+.descbox:hover{
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.h1menu{
+    text-align: center;
+    font-size: 30px;
+}
+
+.h1setmenu{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.pcontainer{
+    border-radius:5px;
+    border: 3px darkgreen solid;
+    background-color:white;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.pmenu{
+    font-size: 22px;
+}
+
+
 /*Contact Us*/
 .container5{
     background: rgb(231, 255, 231);
@@ -463,21 +575,38 @@ to {
 }
 
 .h1contact{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pcontact{
-    font-size: 15px;
+    font-size: 18px;
     max-width: 70%;
+    margin-bottom: 10px;
 }
 
 .inner_container_contact{
-    margin-left: 100px;
+    display: flex;
+    padding-left: 280px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.inner_container_hiring{
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: auto;
     height: auto;
+}
+
+.hirePoster{
+    width: 50%;
+    height: auto;
+    border: 5px rgb(0, 87, 0) solid;
+    border-radius: 10px;
 }
 
 input{
@@ -500,7 +629,31 @@ textarea{
     margin-top: 40px;
 }
 
+.requirementcontainer{
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.ptitle{
+    color: darkgreen;
+    font-size: 20px;
+    margin-bottom: -7px;
+    text-decoration: underline;
+}
+
+.requirements{
+    font-size: 16px;
+}
+
 .btncontact{
+    width: 30%;
+    margin-top: 20px;
+}
+
+.btncontact2{
     width: 30%;
     margin-top: 20px;
 }
@@ -510,20 +663,59 @@ p a:hover{
     text-decoration: underline;
 }
 
+.container6{
+    width:100%;
+    height:auto;
+}
 
+.extra{
+    border-radius: 20px;
+    background-color: rgb(231, 255, 231);
+    padding: 80px;
+    display:flex;
+    flex-direction: row;
+}
 
+.inner_container_map{
+    margin: 50px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
 
+.p_operation{
+    margin-bottom: 10px;
+}
 
+.h1contact2{
+    margin-bottom: -15px;
+    margin-left: 50px;
+}
 
+h3{
+    margin-left: 20px;
+}
 
+.wordcontainer{
+    border-radius: 10px;
+    margin-left: 50px;
+    background-color: white;
+    width:700px;
+    padding: 30px;
+}
 
+.opensign{
+    width: 30%;
+    height: auto;
+}
 
-
-
-
-
-
-
+.space{
+    margin-bottom: 50px;
+}
 
 /*media stuff*/
 @media (max-width:952px){
@@ -537,6 +729,7 @@ p a:hover{
     .checkbtn{
         display: block;
     }
+
 
     nav ul{
         position: absolute;
@@ -576,6 +769,7 @@ p a:hover{
     #check:checked ~ ul{
         right: 1.2%;
     }
+
 
     .manual-btn{
         display:none;
@@ -628,7 +822,77 @@ p a:hover{
         width: 90px;
         height: 90px;
     }
+
+    .inner_container_contact{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .inner_container_hiring{
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        margin-left: 70px;
+    }
+    
+    select{
+        margin-left: 70px;
+    }
+    
+    textarea{
+        margin-left: 70px;
+    }
+
+    .btncontact{
+        margin-left: 170px;
+    }
+
+    .inner_container_map{
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    .h1contact{
+        margin-top: 20px;
+    }
+    
+    .h1contact2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .btncontact2{
+        width: 100%;
+    }
+    
+    .opensign{
+        width: 0%;
+        display: none;
+    }
+
+    .wordcontainer{
+        margin-left: 0px;
+        width:500px;
+        padding: 30px;
+        border: 5px darkgreen solid;
+    }
+
+    .container6{
+        width:65%;
+    }
+
+    .extra{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: none;
+    }
 }
+
 /*For the button to go top*/
 .GoTopButton{
     position: fixed;
