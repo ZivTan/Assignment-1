@@ -452,6 +452,78 @@ to {
     background-image: url(./Pictures/play.png);
 }
 
+/*Contact Us*/
+.container5{
+    background: rgb(231, 255, 231);
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.h1contact{
+    margin-bottom: 20px;
+}
+
+.pcontact{
+    font-size: 15px;
+    max-width: 70%;
+}
+
+.inner_container_contact{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+input{
+    width: 70%;
+    height: 20px;
+    margin-top: 20px;
+}
+
+select{
+    width: 70%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+textarea{
+    resize: none;
+    max-width: 70%;
+    width: 70%;
+    height: 120px;
+    margin-top: 40px;
+}
+
+.btncontact{
+    width: 30%;
+    margin-top: 20px;
+}
+
+p a:hover{
+    color: rgb(84, 16, 140);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*media stuff*/
 @media (max-width:952px){
