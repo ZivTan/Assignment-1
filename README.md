@@ -8,25 +8,25 @@ As the stall sells Leicha and it is green and a very healthy food, the main colo
 
 This website was made with the intentions of letting the customers learn more about the hawker stall while promoting the owner's social medias. It also lets customers have an easier way to spread the word to their friends or family by just reccommending the website. At the same time it is a good way to catch the attention of someone who is looking for a job at a hawker stall and links them straight to the linkedln for the application.
 
-###### User Stories
+### User Stories
 
-1 As a customer who loved the food, I want to recommend the stall to my friends and family so that they may also share the experience.
+1. As a customer who loved the food, I want to recommend the stall to my friends and family so that they may also share the experience.
 
-2 As a person who heard about this stall, I wanted to find out the locations of their stalls and if they are near me. At the same time I also want to know their operating hours so that I may choose a time to visit.
+2. As a person who heard about this stall, I wanted to find out the locations of their stalls and if they are near me. At the same time I also want to know their operating hours so that I may choose a time to visit.
 
-3 As a person who only recently caught wind of the stall, I want to see what types of food that they sell and whether I would like to pay a visit to try.
+3. As a person who only recently caught wind of the stall, I want to see what types of food that they sell and whether I would like to pay a visit to try.
 
-4 As a teenager who has experience in the food industry is looking for a summer job I want to reach out to the owners in order to apply for a position or see if they have other socials that I can apply from.
+4. As a teenager who has experience in the food industry is looking for a summer job I want to reach out to the owners in order to apply for a position or see if they have other socials that I can apply from.
 
-###### Wireframe
+### Wireframe
 
-1 Desktop View - https://xd.adobe.com/view/29d3dff6-c9a1-4e94-9d6b-a9954a233fe0-7c80/
+1. Desktop View - https://xd.adobe.com/view/29d3dff6-c9a1-4e94-9d6b-a9954a233fe0-7c80/
 
-2 Mobile View - https://xd.adobe.com/view/b5ccf9ca-650e-43a3-b34d-a6a43d18bb66-e09f/
+2. Mobile View - https://xd.adobe.com/view/b5ccf9ca-650e-43a3-b34d-a6a43d18bb66-e09f/
 
 ## Features
 
-###### Existing Features
+### Existing Features
 
 - Image Carousel - This features automatically scrolls through images for the user or they could decide to manually scroll it themselves.
 
@@ -40,7 +40,7 @@ This website was made with the intentions of letting the customers learn more ab
 
 - Go to top button - Lets the user avoid scrolling all the way back to the top through the press of the button.
 
-###### Features Left to Implement
+### Features Left to Implement
 
 - Add to cart - Allows the user to see the price of each food item and add them to a cart which they could purchase through online transactions.
 
