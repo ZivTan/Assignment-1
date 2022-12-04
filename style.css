@@ -584,6 +584,11 @@ to {
     margin-bottom: 10px;
 }
 
+.h1contactextra{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
 .pcontact{
     font-size: 18px;
     max-width: 70%;
@@ -609,6 +614,7 @@ to {
 }
 
 .hirePoster{
+    margin-top: 10px;
     width: 50%;
     height: auto;
     border: 5px rgb(0, 87, 0) solid;
