@@ -112,6 +112,8 @@ This website was made with the intentions of letting the customers learn more ab
 - The TV png was obtained from pngitem.com.
   (https://www.pngitem.com/middle/hbwmh_old-television-png-image-transparent-png/)
 
+- The video was taken from youtube channel SETHLUI.com (https://www.youtube.com/@Sethluifoodtravel)
+
 ## Acknowledgement
 
 - I've received inspiration from both websites (https://foodrepublic.com.sg/) and (https://hakkaleipopo.com/en/).
