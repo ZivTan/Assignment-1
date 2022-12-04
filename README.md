@@ -46,14 +46,14 @@ This website was made with the intentions of letting the customers learn more ab
 
 # Technologies Used
 
-- 1. HTML
-- 2. CSS
-- 3. Javascript
-- 4. Fontawesome - For implementation of icons. (https://fontawesome.com/icons)
-- 5. FormSubmit - To enable to sending of forms to the specified email address.
-     (https://formsubmit.co/)
-- 6. Google Maps - To show the location of the stall.
-     (https://www.google.com/maps)
+1. HTML
+2. CSS
+3. Javascript
+4. Fontawesome - For implementation of icons. (https://fontawesome.com/icons)
+5. FormSubmit - To enable to sending of forms to the specified email address.
+   (https://formsubmit.co/)
+6. Google Maps - To show the location of the stall.
+   (https://www.google.com/maps)
 
 # Testing
 
