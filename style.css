@@ -468,6 +468,15 @@ to {
     height:auto;
 }
 
+.container7{
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .properties{
     position:absolute;
     width: 100%;
@@ -532,7 +541,7 @@ to {
     width: 25%;
     height: 291px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.712);
+    background-color: rgba(231, 255, 231, 0.585);
     opacity: 0;
 }
 
